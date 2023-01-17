@@ -13,6 +13,7 @@ import java.util.List;
 @Component
 public class StudentDaoListImpl implements StudentDao {
     List<Student> students = new ArrayList<>();
+
     @Autowired
     UserInputService scannerService;
 

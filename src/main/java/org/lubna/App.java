@@ -10,7 +10,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 /**
  * Hello world!
- *
  */
 public class App {
     public static void main(String[] args) {
@@ -42,27 +41,20 @@ public class App {
 }
          */
 
-    Student student = studentManagementConsole.create();
-    studentManagementConsole.save(student);
-    System.out.println(studentManagementConsole.findAll());
+        Student student = studentManagementConsole.create();
+        studentManagementConsole.save(student);
+        System.out.println(studentManagementConsole.findAll());
 
-   // Student student1 = studentManagementConsole.find(1);
-    //System.out.println(student1);
+        // Student student1 = studentManagementConsole.find(1);
+        //System.out.println(student1);
 
-   // studentManagementConsole.remove(3);
+        // studentManagementConsole.remove(3);
 
-       // System.out.println(studentManagementConsole.findAll());
+        // System.out.println(studentManagementConsole.findAll());
 
         studentManagementConsole.edit(student);
 
 
         System.out.println(studentManagementConsole.findAll());
-
-
-
-
-
-
-
     }
 }
